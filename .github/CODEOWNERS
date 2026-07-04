@@ -1,0 +1,20 @@
+# Default code owner
+
+* @ayushrijal83-ops
+
+# Documentation
+
+/docs/ @ayushrijal83-ops
+
+# GitHub Workflows
+
+/.github/ @ayushrijal83-ops
+
+# Python Source Files
+
+*.py @ayushrijal83-ops
+
+# Configuration Files
+
+*.yml @ayushrijal83-ops
+*.yaml @ayushrijal83-ops
