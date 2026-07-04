@@ -1,0 +1,23 @@
+* text=auto eol=lf
+
+*.py text
+*.md text
+*.yml text
+*.yaml text
+*.json text
+*.toml text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+*.mp3 binary
+*.wav binary
+
+*.mp4 binary
+*.avi binary
+
+*.zip binary
+*.7z binary
