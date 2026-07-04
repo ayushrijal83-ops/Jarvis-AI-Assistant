@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+
+title: "Jarvis AI Assistant"
+
+message: >
+If you use this project in your research,
+publications, or educational work,
+please cite it using the metadata below.
+
+type: software
+
+authors:
+
+* family-names: Rijal
+  given-names: Ayush
+
+repository-code: https://github.com/ayushrijal83-ops/Jarvis-AI-Assistant
+
+license: MIT
+
+version: 1.0.0
+
+date-released: 2026-06-30
+
+keywords:
+
+* Artificial Intelligence
+* Desktop Assistant
+* Ollama
+* Offline AI
+* Computer Vision
+* Voice Assistant
+* Gesture Recognition
+* Automation
+
+abstract: >
+Jarvis AI Assistant is an open-source, privacy-first,
+offline desktop assistant powered by local large
+language models through Ollama. It integrates
+speech recognition, desktop automation, gesture
+recognition, computer vision, and game control
+into a modular and extensible platform.
