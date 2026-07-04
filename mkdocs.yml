@@ -1,0 +1,69 @@
+site_name: Jarvis AI Assistant
+site_description: Offline AI Desktop Assistant powered by Ollama
+site_author: Ayush Rijal
+site_url: https://ayushrijal83-ops.github.io/Jarvis-AI-Assistant/
+
+repo_url: https://github.com/ayushrijal83-ops/Jarvis-AI-Assistant
+repo_name: ayushrijal83-ops/Jarvis-AI-Assistant
+
+theme:
+name: material
+
+features:
+- navigation.tabs
+- navigation.sections
+- navigation.expand
+- navigation.instant
+- navigation.top
+- search.highlight
+- search.share
+- content.code.copy
+- content.action.edit
+
+palette:
+- scheme: default
+primary: blue
+accent: indigo
+
+```
+- scheme: slate
+  primary: blue
+  accent: indigo
+```
+
+plugins:
+
+* search
+* mermaid2
+* mkdocstrings
+
+markdown_extensions:
+
+* admonition
+* tables
+* toc:
+  permalink: true
+* pymdownx.highlight
+* pymdownx.superfences
+* pymdownx.tabbed
+* pymdownx.details
+* pymdownx.emoji
+
+nav:
+
+* Home: index.md
+* Installation: installation.md
+* Architecture: architecture.md
+* Configuration: configuration.md
+* AI Brain: ai_brain.md
+* Voice System: voice_system.md
+* PC Control: pc_control.md
+* Gesture Control: gesture_control.md
+* Vision System: vision_system.md
+* Emotion Engine: emotion_engine.md
+* Game Mode: game_mode.md
+* API: api.md
+* Development Guide: development_guide.md
+* Troubleshooting: troubleshooting.md
+* Roadmap: roadmap.md
+* FAQ: faq.md
