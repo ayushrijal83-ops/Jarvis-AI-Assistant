@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+
+contact_links:
+
+* name: Documentation
+  url: https://github.com/ayushrijal83-ops/Jarvis-AI-Assistant/tree/main/docs
+  about: Please read the documentation before opening an issue.
+
+* name: Discussions
+  url: https://github.com/ayushrijal83-ops/Jarvis-AI-Assistant/discussions
+  about: Ask questions and discuss ideas with the community.
