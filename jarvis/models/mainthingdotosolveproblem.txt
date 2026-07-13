@@ -1,2 +1,0 @@
-So i know you are going to get proble in model part i simply recommend you to just download model (vosk-model-en-us-0.22) from this https://alphacephei.com/vosk/models.
-one main thing just simple delete this folder in mean replace it with this only the model.
