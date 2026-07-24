@@ -1,27 +1,8 @@
-<div align="center">
-
 # 🤖 Jarvis AI Assistant
 
 ### An Offline AI Desktop Assistant Powered by Local Large Language Models
 
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black?style=for-the-badge)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Gesture_Recognition-FF6F00?style=for-the-badge)
-![Whisper](https://img.shields.io/badge/Faster--Whisper-Speech_Recognition-success?style=for-the-badge)
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-</p>
-
-**A modular AI assistant that combines Local LLMs, Voice Recognition, Computer Vision, Gesture Control, Desktop Automation, and Game Control into one offline application.**
-
----
-
-⭐ **If you like this project, consider giving it a star!**
-
-</div>
+> Privacy-first • Offline-first • Modular • Open Source
 
 ---
 
@@ -33,222 +14,70 @@
 - Demo
 - Architecture
 - Technology Stack
+- Quick Start
 - Installation
-- Usage
-- Folder Structure
-- Project Workflow
-- Roadmap
-- Documentation
-- Contributing
-- License
+- AI Model Setup
+- Speech Recognition Setup
+- Continue in `README_Part2.md`
 
 ---
 
 # 🚀 Overview
 
-Jarvis AI Assistant is an **offline-first desktop AI assistant** designed to perform intelligent computer interactions without relying on cloud services.
+Jarvis AI Assistant is a modular offline desktop assistant powered by local AI. It combines local LLMs, speech recognition, computer vision, gesture recognition, desktop automation and game control into one application.
 
-Instead of sending your conversations to online AI providers, Jarvis runs entirely on your own computer using **Ollama** and local language models.
+## ✨ Features
 
-The assistant combines multiple AI technologies into one unified system, including:
-
-- Local Large Language Models
-- Offline Speech Recognition
-- Computer Vision
-- Gesture Recognition
-- Desktop Automation
-- Keyboard & Mouse Control
-- Game Control
-- Modular Architecture
-
-The project is designed for learning, research, experimentation, and future expansion.
-
----
-
-# ✨ Features
-
-## 🧠 Artificial Intelligence
-
-- Local LLM using Ollama
-- Streaming responses
-- Conversation memory
-- Context-aware conversations
-- Offline inference
-
----
-
-## 🎤 Voice Recognition
-
-- Faster Whisper
+- Local LLM (Ollama)
 - Offline speech recognition
-- Wake-word support
-- Low latency
-
----
-
-## 🖥 Desktop Automation
-
-- Open applications
-- Search the web
-- Mouse control
-- Keyboard automation
-- Safe application whitelist
-- Rate limiting
-
----
-
-## ✋ Gesture Recognition
-
-- Hand tracking
-- Gesture classification
-- Camera interaction
-- Real-time recognition
-
----
-
-## 👁 Computer Vision
-
-- Webcam integration
-- User monitoring
-- Attention tracking
-- Frame processing
-
----
-
-## 🎮 Game Mode
-
-- Gesture-controlled gameplay
-- Custom game profiles
-- Automatic launcher
-- Keyboard mapping
-
----
-
-## 😊 Emotion Engine
-
-- Context-aware response style
-- Lightweight emotion handling
-- Adaptive assistant behaviour
-
----
+- Gesture recognition
+- Computer vision
+- Desktop automation
+- Game mode
+- Emotion engine
+- Conversation memory
 
 # 📷 Screenshots
 
-> Screenshots will be added soon.
-
-```
-assets/screenshots/main_ui.png
-
-assets/screenshots/voice_system.png
-
-assets/screenshots/gesture_control.png
-
-assets/screenshots/game_mode.png
-
-assets/screenshots/vision.png
-```
-
----
+_Add screenshots here._
 
 # 🎥 Demo
 
-A demonstration video will be added after Version 1.0 is released.
+_Add GIF or YouTube demo here._
 
----
-
-# 🏗 System Architecture
+# 🏗 Architecture
 
 ```text
-                    USER
-                      │
-      ┌───────────────┼────────────────┐
-      │               │                │
-      ▼               ▼                ▼
- Voice Input     Camera Input      Keyboard
-      │               │
-      ▼               ▼
-Speech Engine    Vision Engine
-      │               │
-      └───────┬───────┘
-              ▼
-       Command Router
-              │
- ┌────────────┼──────────────┐
- │            │              │
- ▼            ▼              ▼
-AI Brain  PC Controller  Game Controller
- │            │              │
- └────────────┼──────────────┘
-              ▼
-      Desktop Interaction
+User
+ │
+ ├── Voice
+ ├── Camera
+ └── Keyboard
+      │
+ Command Router
+      │
+ ├── AI Brain
+ ├── Vision
+ ├── Desktop Controller
+ └── Game Controller
 ```
-
----
 
 # ⚙ Technology Stack
 
-| Category | Technology |
-|------------|------------|
-| Programming Language | Python |
-| Local AI | Ollama |
-| Language Models | Mistral / Gemma / Llama |
-| Speech Recognition | Faster Whisper |
-| Computer Vision | OpenCV |
-| Gesture Recognition | MediaPipe |
-| Desktop Automation | PyAutoGUI |
-| Audio Processing | SoundDevice |
-| GUI | Tkinter |
-| Threading | Python Threading |
+| Component | Technology |
+|---|---|
+| Language | Python |
+| LLM | Ollama |
+| Vision | OpenCV |
+| Gestures | MediaPipe |
+| Speech | Vosk / Faster-Whisper |
+| Automation | PyAutoGUI |
 
----
-
-# 📂 Project Structure
-
-```
-Jarvis-AI-Assistant/
-
-│
-├── assets/
-│
-├── docs/
-│
-├── models/
-│
-├── src/
-│
-├── main.py
-├── ai_brain.py
-├── control.py
-├── gesture.py
-├── gesture_control.py
-├── emotion_engine.py
-├── game_mode.py
-├── config.py
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
-
----
-
-# ⚡ Installation
-
-Clone the repository
+# ⚡ Quick Start
 
 ```bash
 git clone https://github.com/ayushrijal83-ops/Jarvis-AI-Assistant.git
-```
-
-Move into the project
-
-```bash
 cd Jarvis-AI-Assistant
-```
-
-Create a virtual environment
-
-```bash
 python -m venv venv
 ```
 
@@ -258,157 +87,146 @@ Windows
 venv\Scripts\activate
 ```
 
-Linux
+Linux/macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Install dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
-Install Ollama
+# 🧠 AI Model Setup
+
+Install Ollama from https://ollama.com/download
 
 ```bash
-https://ollama.com
-```
-
-Download a model
-
-```bash
+ollama serve
 ollama pull mistral
 ```
 
-or
+Alternative models:
+
+- gemma3:1b
+- phi3
+- llama3
+
+# 🎤 Speech Recognition Setup
+
+Install:
 
 ```bash
-ollama pull gemma3:1b
+pip install vosk
 ```
 
----
+Download a Vosk model from the official Vosk models page and extract it to:
+
+```text
+models/
+└── vosk-model-small-en-us-0.15/
+```
+
+> Large AI models are intentionally excluded from this repository because of GitHub size limits.
+# ▶ Continue from Part 1
+
+# ⚙ Configuration
+
+Edit `config.py` to change the LLM model, speech model path, camera settings and automation preferences.
+
+# 📁 Project Structure
+
+```text
+Jarvis-AI-Assistant/
+├── assets/
+├── docs/
+├── models/
+├── src/
+├── main.py
+├── config.py
+├── requirements.txt
+└── README.md
+```
 
 # ▶ Usage
-
-Run the assistant
 
 ```bash
 python main.py
 ```
 
----
+# 🔄 Workflow
 
-# 🔄 Project Workflow
+User → Speech/Camera → Recognition → Command Router → AI Brain → Desktop Actions
 
-```
-User
+# 💻 Recommended Hardware
 
-↓
+Minimum:
+- 8 GB RAM
+- Intel i5 / Ryzen 5
 
-Voice / Camera
+Recommended:
+- 16 GB RAM
+- SSD
+- Webcam
+- Microphone
 
-↓
+# 🔒 Why Local AI?
 
-Recognition
+- No API costs
+- Better privacy
+- Offline capable
+- Local inference
 
-↓
+# 🛠 Troubleshooting
 
-Command Router
+## Ollama not found
+Restart your terminal.
 
-↓
+## Missing model
+Run `ollama pull mistral`.
 
-AI Brain
+## Speech model missing
+Download and place it inside `models/`.
 
-↓
+# 🗺 Roadmap
 
-Desktop Controller
+## v1.0
+- Local LLM
+- Voice Recognition
+- Vision
+- Gestures
+- Desktop Automation
 
-↓
+## v1.5
+- Face Recognition
+- Better UI
+- Plugins
 
-Action
-```
-
----
+## v2.0
+- Long-term Memory
+- RAG
+- AI Agents
 
 # 📚 Documentation
 
-Detailed documentation can be found in the **docs/** directory.
-
-- Installation Guide
-- Architecture
-- AI Brain
-- Voice System
-- Gesture Control
-- Vision System
-- PC Control
-- Game Mode
-- API Documentation
-
----
-
-# 🚀 Roadmap
-
-## Version 1.0
-
-- [x] Local LLM
-- [x] Voice Recognition
-- [x] Gesture Recognition
-- [x] Desktop Automation
-- [x] Game Mode
-- [x] Emotion Engine
-
-## Version 1.5
-
-- [ ] Face Recognition
-- [ ] Speaker Recognition
-- [ ] Better UI
-- [ ] Plugin System
-
-## Version 2.0
-
-- [ ] Long-Term Memory
-- [ ] RAG
-- [ ] Web Automation
-- [ ] Smart Scheduling
-- [ ] AI Agents
-
----
+Create additional docs:
+- SETUP_MODELS.md
+- ARCHITECTURE.md
+- VOICE_SYSTEM.md
+- GAME_MODE.md
 
 # 🤝 Contributing
 
-Contributions are welcome.
-
-If you have ideas, bug fixes, or new features, feel free to fork the repository and submit a Pull Request.
-
----
+Fork the repository, create a branch, commit your changes, and open a Pull Request.
 
 # 📄 License
 
-This project is licensed under the MIT License.
-
----
+MIT License.
 
 # 🙏 Acknowledgements
 
-This project uses several excellent open-source projects:
-
-- Ollama
-- Faster Whisper
-- OpenCV
-- MediaPipe
-- PyAutoGUI
-- Python
-
-A big thanks to the open-source community for making local AI development accessible.
+Thanks to the communities behind Ollama, OpenCV, MediaPipe, Vosk, Faster-Whisper and Python.
 
 ---
 
-<div align="center">
-
-## ⭐ Don't forget to Star the Repository ⭐
-
-Made with ❤️ using Python and Open Source Technologies.
-
-</div>
+⭐ If you find this project useful, consider giving it a star!
